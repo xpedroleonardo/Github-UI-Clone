@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Main, LeftSide, RightSide } from './styles';
+import { Container, Main, LeftSide, RightSide, Repos } from './styles';
 
 import ProfileData from '../../components/ProfileData';
 import RepoCard from '../../components/RepoCard';
@@ -25,6 +25,20 @@ const Profile: React.FC = () => {
         <RightSide>
           <Repos>
             <h2>Random repos</h2>
+
+            <div>
+              {[1,2,3,4,5,6].map(n => (
+                <RepoCard 
+                  key={n}
+                  username={'xpedroleonardo'}
+                  reponame={'Twitter-UI-Clone'}
+                  description={'Clone twitter'}
+                  language={n % 3 === 0 ? 'JavaScript' : 'TypeScript'}
+                  stars={10}
+                  forks={4}
+                />
+              ))}
+            </div>
           </Repos>
         </RightSide>
       </Main>

@@ -1,12 +1,11 @@
 import React from 'react';
-import { Text } from 'react-native';
 
 import { Container } from './styles';
 
 const Repo: React.FC = () => {
   return (
     <Container>
-      <Text>Repo</Text>
+      <h1>Repo</h1>
     </Container>
   );
 };
