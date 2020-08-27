@@ -1,16 +1,36 @@
 import React from 'react';
 
-import { Container, Main, LeftSide, RightSide, Repos } from './styles';
+import { Container, Main, LeftSide, RightSide, Repos, CalendarHeading, RepoIcon, Tab } from './styles';
 
 import ProfileData from '../../components/ProfileData';
 import RepoCard from '../../components/RepoCard';
+import RandomCalendar from '../../components/RandomCalendar';
 
 const Profile: React.FC = () => {
+
+  const TabContent = () => (
+
+    <div className="content">
+      <RepoIcon />
+      <span className="label">Repositories</span>
+      <span className="number">9</span>
+    </div>
+
+  )
+
   return (
     <Container>
+      <Tab className="desktop">
+        <div className="wrapper">
+          <span className="offset" />
+          <TabContent />
+        </div>
+        <span className="line" />
+      </Tab>
+
       <Main>
         <LeftSide>
-          <ProfileData 
+          <ProfileData
             username={'xpedroleonardo'}
             name={'Pedro Leonardo'}
             avatarUrl={'https://avatars3.githubusercontent.com/u/50972494?s=460&u=e5bf2cf9f485f501d8ac807dc587fd096a12ab31&v=4'}
@@ -22,13 +42,19 @@ const Profile: React.FC = () => {
             blog={undefined}
           />
         </LeftSide>
+
         <RightSide>
+          <Tab className="mobile">
+            <TabContent />
+            <span className="line" />
+          </Tab>
+
           <Repos>
             <h2>Random repos</h2>
 
             <div>
-              {[1,2,3,4,5,6].map(n => (
-                <RepoCard 
+              {[1, 2, 3, 4, 5, 6].map(n => (
+                <RepoCard
                   key={n}
                   username={'xpedroleonardo'}
                   reponame={'Twitter-UI-Clone'}
@@ -40,6 +66,12 @@ const Profile: React.FC = () => {
               ))}
             </div>
           </Repos>
+
+          <CalendarHeading>
+            Random calendar (do not represent actual data)
+          </CalendarHeading>
+
+          <RandomCalendar />
         </RightSide>
       </Main>
     </Container>
