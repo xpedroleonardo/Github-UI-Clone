@@ -16,9 +16,7 @@ const RandomCalendar: React.FC = () => {
 
   return (
     <Container>
-
       <div className="wrapper">
-        
         <Heatmap
           startDate={startDate}
           endDate={endDate}
@@ -35,7 +33,6 @@ const RandomCalendar: React.FC = () => {
             return `scale-${clampedCount}`
           }}
           showWeekdayLabels
-
         />
       </div>
 
