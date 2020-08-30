@@ -1,44 +1,73 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🖥️ GitHub | UI Clone
 
-## Available Scripts
+<div align="center">
+    <img style="width: 85%;" src="./src/assets/README.gif">
+</div>
 
-In the project directory, you can run:
 
-### `yarn start`
+## 📑 Sobre
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Aplicação web, clone da página de perfil do GitHub, desenvolvido seguindo uma vídeo aula da [Rocketseat](https://github.com/Rocketseat).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Layout Responsivo
+- API do GitHub
 
-### `yarn test`
+## ♻ Recursos
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Pesquisa de usuários/repositórios
+- Dark Mode
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 👨‍💻 Tecnologias 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+O projeto foi desenvolvido utilizando
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- TypeScript
+- styled-components
 
-### `yarn eject`
+## ⬇ Como baixar o projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    #Clonar o Repositório (Via Terminal)
+    $ git clone https://github.com/xpedroleonardo/Github-UI-Clone.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    #Ou
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    #Botão verde acima (Zip)
+    Baixar projeto compactado
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Como executar o projeto
+
+Ápós baixar o projeto, execute os seguintes passos: 
+
+```bash
+
+    #Entrar na pasta do projeto
+    $ cd Github-UI-Clone/
+
+    #Instalar as depedências (npm ou yarn)
+    $ npm | yarn install
+
+    #Executando o Projeto (npm ou yarn)
+    $ npm | yarn start
+
+```
+
+Acesse http://localhost:3000/ e explore o projeto.
+
+## ⚠ Atenção !!!
+
+Se você fechar o terminal que o projeto está sendo executado, ele irá parar de funcionar.
+
+Deixe o terminal aberto após rodar os comandos para executar o projeto.
+
+---
+
+### 💻 Feito por [Pedro Leonardo](https://github.com/xpedroleonardo). 
+
+### Gostou do projeto ? De uma estrela ⭐
